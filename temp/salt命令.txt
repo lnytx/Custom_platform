@@ -1,0 +1,27 @@
+573  salt '*' test.ping
+  574  salt '*' file.file_exists /etc/passwd
+  575  salt '*' file.file_exists c:/1012/temp/1.txt
+  576  salt '*' file.file_exists d:/1012/temp/1.txt
+  577  salt '*' file.replace d:/1012/temp/1.txt pattern='基材' repl='没有人'
+  578  salt '*' file.replace d:/1012/temp/1.txt '基材' '没有人'
+  579  salt '*' file.sed d:/1012/temp/1.txt '基材' '没有人'
+  580  salt '*' file.replace d:/1012/temp/1.txt pattern='基材' repl='没有人'
+  581  salt '*' file.replace d:/1012/temp/1.txt pattern='基材' repl='没有人' append_if_not_found =true
+  582  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'
+  583  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='d:/1012/back/.bak'
+  584  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='d:/1012//temp/back/.bak'
+  585  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='d:/1012/temp/back/.bak'
+  586  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='d:/1012/temp/'
+  587  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='.bak'
+  588  salt '*' file.replace d:/1012/temp/1.txt pattern='基材' repl='BB'  backup='.bak'
+  589  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='.bak'  show_changes=True
+  590  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='.bak'  show_changes=False
+  591  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='.bak'  dry_run
+  592  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='.bak'  dry_run='True'
+  593  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='.bak'  dry_run='True' append_if_not_found ='True'
+  594  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='.bak' append_if_not_found ='True'
+  595  salt '*' file.replace d:/1012/temp/1.txt pattern='sdf' repl='AAAAA'  backup='.bak' append_if_not_found='True'
+  596  salt '*' file.replace d:/1012/temp/1.txt pattern='AAAAA' repl=''  backup='.bak' append_if_not_found='True'
+  597  salt '*' file_exists d:/1012/temp/1.txt
+  598  salt '*' file_exists 'd:/1012/temp/1.txt'
+  599  salt '*' file.file_exists 'd:/1012/temp/1.txt'

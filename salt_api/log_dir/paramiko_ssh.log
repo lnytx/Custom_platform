@@ -1,0 +1,51 @@
+2017-12-28 14:39:29,573 schedule     INFO     Running job Every 1 minute do test_job() (last run: [never], next run: 2017-12-28 14:39:29) __init__.py      run      410
+2017-12-28 14:41:11,746 schedule     INFO     Running job Every 1 minute do test_job() (last run: [never], next run: 2017-12-28 14:41:11) __init__.py      run      410
+2017-12-28 14:41:11,746 root         ERROR    2017-12-28 host_status.py test_job       21
+2017-12-28 14:42:11,747 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:41:11, next run: 2017-12-28 14:42:11) __init__.py      run      410
+2017-12-28 14:42:11,748 root         ERROR    2017-12-28 host_status.py test_job       21
+2017-12-28 14:43:55,538 schedule     INFO     Running job Every 1 minute do test_job() (last run: [never], next run: 2017-12-28 14:43:55) __init__.py      run      410
+2017-12-28 14:43:55,538 root         ERROR    sss      host_status.py test_job       36
+2017-12-28 14:45:17,374 schedule     INFO     Running job Every 1 minute do test_job() (last run: [never], next run: 2017-12-28 14:45:17) __init__.py      run      410
+2017-12-28 14:45:17,374 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:46:17,375 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:45:17, next run: 2017-12-28 14:46:17) __init__.py      run      410
+2017-12-28 14:46:17,375 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:47:17,376 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:46:17, next run: 2017-12-28 14:47:17) __init__.py      run      410
+2017-12-28 14:47:17,376 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:48:17,377 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:47:17, next run: 2017-12-28 14:48:17) __init__.py      run      410
+2017-12-28 14:48:17,377 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:49:17,377 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:48:17, next run: 2017-12-28 14:49:17) __init__.py      run      410
+2017-12-28 14:49:17,377 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:50:17,378 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:49:17, next run: 2017-12-28 14:50:17) __init__.py      run      410
+2017-12-28 14:50:17,378 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:51:17,378 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:50:17, next run: 2017-12-28 14:51:17) __init__.py      run      410
+2017-12-28 14:51:17,378 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:52:17,379 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:51:17, next run: 2017-12-28 14:52:17) __init__.py      run      410
+2017-12-28 14:52:17,379 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:53:17,379 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:52:17, next run: 2017-12-28 14:53:17) __init__.py      run      410
+2017-12-28 14:53:17,379 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:54:17,380 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:53:17, next run: 2017-12-28 14:54:17) __init__.py      run      410
+2017-12-28 14:54:17,383 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:55:17,384 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:54:17, next run: 2017-12-28 14:55:17) __init__.py      run      410
+2017-12-28 14:55:17,384 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:56:17,385 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:55:17, next run: 2017-12-28 14:56:17) __init__.py      run      410
+2017-12-28 14:56:17,385 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:57:17,385 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:56:17, next run: 2017-12-28 14:57:17) __init__.py      run      410
+2017-12-28 14:57:17,385 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:58:17,386 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:57:17, next run: 2017-12-28 14:58:17) __init__.py      run      410
+2017-12-28 14:58:17,386 root         INFO     sss      host_status.py test_job       36
+2017-12-28 14:59:17,387 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:58:17, next run: 2017-12-28 14:59:17) __init__.py      run      410
+2017-12-28 14:59:17,387 root         INFO     sss      host_status.py test_job       36
+2017-12-28 15:00:17,387 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 14:59:17, next run: 2017-12-28 15:00:17) __init__.py      run      410
+2017-12-28 15:00:17,387 root         INFO     sss      host_status.py test_job       36
+2017-12-28 15:01:17,389 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 15:00:17, next run: 2017-12-28 15:01:17) __init__.py      run      410
+2017-12-28 15:01:17,389 root         INFO     sss      host_status.py test_job       36
+2017-12-28 15:02:17,389 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 15:01:17, next run: 2017-12-28 15:02:17) __init__.py      run      410
+2017-12-28 15:02:17,389 root         INFO     sss      host_status.py test_job       36
+2017-12-28 15:03:17,390 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 15:02:17, next run: 2017-12-28 15:03:17) __init__.py      run      410
+2017-12-28 15:03:17,390 root         INFO     sss      host_status.py test_job       36
+2017-12-28 15:04:17,390 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 15:03:17, next run: 2017-12-28 15:04:17) __init__.py      run      410
+2017-12-28 15:04:17,390 root         INFO     sss      host_status.py test_job       36
+2017-12-28 15:05:17,390 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 15:04:17, next run: 2017-12-28 15:05:17) __init__.py      run      410
+2017-12-28 15:05:17,390 root         INFO     sss      host_status.py test_job       36
+2017-12-28 15:06:17,391 schedule     INFO     Running job Every 1 minute do test_job() (last run: 2017-12-28 15:05:17, next run: 2017-12-28 15:06:17) __init__.py      run      410
+2017-12-28 15:06:17,391 root         INFO     sss      host_status.py test_job       36

@@ -1,0 +1,63 @@
+yum install -y salt-master
+yum install -y salt-api
+yum install -y expect(git@host的交互，各个子节点都要装，本地yum源中有，可以直接安装)
+
+pip configparser
+pip paramiko
+pip install -y pygit2
+pip install GitPython是python库
+#pip install schedule  #定时模块 未用到
+#pip install django-crontab定时运行函数 未用到
+pip install apscheduler==2.1.2 定时运行函数
+
+
+Highcharts-6.0.4绘图插件
+
+salt-api配置
+1、api.conf
+rest_cherrypy:
+  port: 9999
+  host: 172.17.39.93
+  disable_ssl: True
+2、eauth.conf
+external_auth:
+  pam:
+    saltapi:
+      - .*
+      - '@wheel'
+      - '@runner'
+
+
+configparser(读取配置文件)
+
+python3.6
+bootstrap2.7(3)
+
+CherryPy(salt-api的web服务器)
+安装pip(python setup.py install)
+安装cherrypy(pip install cherrypy)
+
+sweetalert（1.1.3版本，提交后的弹出确认框)
+http://www.bootcdn.cn/sweetalert/
+
+
+bootstrap-3.3.7-dist
+bootstrap-fileinput
+上传文件插件(路径为http://127.0.0.1:8000/mult/)
+
+bootstrap-multiselect(多项目选择插件)(需要，并且手动修了修改css，bootstrap-multiselect.css，具体请查看笔记)
+开发/下拉多选框bootstrap-multiselect教程
+
+git模块
+将git命令动态写入到git_order.sls文件中的cmd.run中上传到/srv/salt中去执行
+从版本管理开始就不考虑windows机器了（以后需要就再加上）
+
+yum源那里可以自己挂载或者复制ISO里的package包到/var/www/html/centos/目录下面，该目录固定（安装httpd时产生）
+使用yum安装git时需要手动下载epel-release-7-9.noarch.rpm到/var/www/html/centos/
+
+
+admin默认用户与密码admin/admin123456
+
+权限模块
+login下新建quanxian models
+并使用Django命令Migrate同步到数据库中就可以使用了

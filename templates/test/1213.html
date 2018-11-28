@@ -1,0 +1,53 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="UTF-8"/>  
+<script src="/static/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+<script src="/static/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+<script src="/static/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script> 
+</script>  
+<style>  
+    div{  
+        width:450px;  
+        margin-top: 20px;  
+        border: solid grey 2px;  
+        padding: 5px;  
+        border-radius: 10px;  
+        text-align: center;  
+        background-color:yellowgreen;  
+        color: white;  
+    }  
+</style>  
+
+</head>  
+<body>  
+<form action="">  
+姓名: <input type="text" name="Name" id='ss' value="Zou Miao" /><br><br>  
+学校: <input type="text" name="School" value="KunGong" /><br><br>  
+时间: <input type="date" name="Time"/><br><br>  
+邮箱: <input type="email" name="Email"/><br><br>  
+<label name='label231'>asdfsdf</label>
+邮箱: <button  name="1231"/>213213</button>
+</form><br>  
+<button id='btn'>序列化表单值</button>  
+<div id="results"></div>  
+</body>  
+<script>  
+
+
+
+ $("#btn").click(function(){  
+ var t = $("#ss").val()
+ alert("ttt"+t)
+    x=$("form").serializeArray();  
+    $.each(x, function(i, field){  
+      $("#results").append(field.name + ":" + field.value + " ");  
+    });  
+  });  
+</script> 
+
+</html>  

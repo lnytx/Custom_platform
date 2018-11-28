@@ -1,0 +1,114 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="UTF-8"/>  
+<script src="/static/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+<!--分页测试-->
+	
+	<!--引用boostrap-fileinput-->
+	<script src="/static/js/bootstrap-fileinput/fileinput.js"></script> 
+	<script src="/static/js/bootstrap-fileinput/fileinput.min.js"></script> 
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+	
+	<link href="/static/css/bootstrap-multiselect/bootstrap-multiselect.css" rel="stylesheet" type="text/css"/>
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	
+	
+	
+	
+	
+<!--	<link href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/static/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>-->
+
+
+<style>
+
+</style>
+
+
+</head>  
+<body>  
+
+<table>
+<thead id="t_thead">
+<tr>
+<th>ip</th>
+<th>host</th>
+<th>minion_id</th>
+</tr>
+</thead>
+<tbody id='tbody'>
+{% for row in list_ip %}
+<tr>
+<td>{{row.ip}}</td>
+<td>{{row.host_name}}</td>
+<td>{{row.minion_id}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% ifnotequal curPage 1 %}  
+            <a href="?curPage={{ curPage }}&&allPage={{ allPage }}&&pageType=pageUp">  
+                上一页  
+            </a>  
+ {% endifnotequal %}   
+  
+        第{{ curPage }}/{{ allPage }}页   
+        
+        {% for i in page_num_range %}
+      		{% if i == posts.number %}
+          		<a style="font-size: 20px" href="?curPage={{ curPage }}&&pageNum={{i}}">{{ i }}</a>
+     		{% else %}
+         		<a href="?curPage={{ curPage }}&&allPage={{ allPage }}&&pageNum={{i}}">{{ i }}</a>
+    		{% endif %}
+		{% endfor %}
+  
+         <!-- 如果当前是最后一页，就不显示【下一页】链接 -->  
+        {% ifnotequal curPage allPage %}  
+            <a href="?curPage={{ curPage }}&&allPage={{ allPage }}&&pageType=pageDown">  
+                下一页  
+            </a>  
+        {% endifnotequal %}  
+
+
+
+
+
+
+<!--<select id="example-multiple" multiple="multiple">  
+        <option value="cheese">Cheese</option>  
+        <option value="tomatoes">Tomatoes</option>  
+        <option value="mozarella">Mozzarella</option>  
+        <option value="mushrooms">Mushrooms</option>  
+        <option value="pepperoni">Pepperoni</option>  
+        <option value="onions">Onions</option>  
+    </select>  
+</body>  -->
+
+
+<script type="text/javascript">  
+$('#example-multiple').multiselect({  
+                enableClickableOptGroups: true,  
+                enableCollapsibleOptGroups: true,  
+                includeSelectAllOption: true,  
+                buttonWidth: '400px',  
+                dropRight: true,  
+                maxHeight: 200,  
+                onChange: function(option, checked) {  
+               	console.log($(option).val());  
+                                /*if(条件) { 
+                      this.clearSelection();//清除所有选择及显示 
+                 }*/  
+                },  
+                nonSelectedText: '请选择',  
+                numberDisplayed: 10,  
+                enableFiltering: true,  
+                allSelectedText:'全部',  
+        });  
+</script>  
+
+
+
+</html>  

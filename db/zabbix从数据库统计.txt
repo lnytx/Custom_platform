@@ -1,0 +1,107 @@
+select  c.`host`,a.key_,sum(d.value_avg)/720,sum(d.value_max)/720,sum(d.value_min)/720 from hosts_groups b
+LEFT JOIN  items a on a.hostid=b.hostid
+left join  hosts c on b.hostid=c.hostid
+left join trends d on a.itemid=d.itemid
+ where  from_unixtime(d.clock) BETWEEN '2017-02-10' and '2017-03-10'
+and b.groupid='203' 
+ and a.key_ ='system.cpu.util[,iowait]'
+-- (
+-- -- 'system.cpu.util[,user]',
+-- -- 'system.cpu.util[,iowait]',
+-- -- 'system.cpu.util[,idle]',
+-- -- 'system.swap.size[,free]',
+-- -- 'system.swap.size[,total]',
+-- -- -- 'system.cpu.load[percpu,avg1]',
+-- -- -- 'system.cpu.load[percpu,avg5]',
+-- -- -- 'system.cpu.load[percpu,avg15]',
+-- 'vm.memory.size[available]',
+-- 'vm.memory.size[total]'
+-- )
+group by a.key_,c.`host`
+order by d.value_max desc 
+--trends
+--trends_uint这两个表里找数据，因为这两个表存放的数据类型不同，还有history等几个表也是一样的
+-- 173563 ipos.cpu
+-- 173562 ipos.command
+-- select *from history_str where itemid='173562'
+ipos.command在这个表history_str中
+-- select *from history where itemid='173563'
+-- 173563 ipos.cpu在history表中
+
+——————————————————————
+select n.key_,n.`host`,sum(t.value_avg)/720,sum(t.value_max)/720,sum(t.value_min)/720 from trends t LEFT JOIN(
+select c.itemid,c.key_,s.`host`,s.hostid from items c RIGHT JOIN (
+select a.host,a.hostid from `hosts` a where a.hostid in (select b.hostid from  hosts_groups b where b.groupid='203'))s
+on c.hostid=s.hostid
+and c.key_ IN
+(
+'system.cpu.util[,user]',
+'system.cpu.util[,iowait]',
+'system.cpu.util[,idle]',
+'system.swap.size[,free]',
+'system.swap.size[,total]',
+'system.cpu.load[percpu,avg1]',
+'system.cpu.load[percpu,avg5]',
+'system.cpu.load[percpu,avg15]',
+'vm.memory.size[available]'
+)) n
+ON t.itemid=n.itemid
+group by n.key_,n.`host
+---------------------------------
+select *from groups where groupid=203;
+select *from hosts_groups where groupid=203;
+根据组名查host
+select * from `hosts` 
+where hostid in(select hostid from hosts_groups where groupid=203) and status=0;
+
+hosts_templates表中的10081表示的是windows模板
+
+---
+查所有的windows模板的机器
+select b.`host`,a.hostid,a.templateid from hosts_templates a,`hosts` b,hosts_groups c
+where a.hostid=b.hostid
+and a.hostid=c.hostid
+and c.groupid=203
+and a.templateid=10081;
+
+---
+查看机器组为IPOS,并且模板为windows的，的C盘大小（分开查，此处查的是itemid）,根据itemid查trends表
+select a.hosttemplateid,a.hostid,b.`host`,i.`name`,CONCAT('''',i.itemid,''','),i.key_ from hosts_templates a,`hosts` b,hosts_groups c
+,items i-- , trends t
+-- ,items i, trends t
+where a.hostid=b.hostid
+and i.hostid = a.hostid
+-- and i.itemid=t.itemid
+and a.hostid=c.hostid
+and c.groupid=203
+and a.templateid=10081
+and (i.key_='vfs.fs.size[C:,total]' 
+or i.key_='vfs.fs.size[C:,used]'
+or i.key_='vfs.fs.size[C:,pfree]');
+trends是百分比数据
+trends_units是整数
+
+--取重复记录
+select host,key_,value_avg,count(*) from  ttt
+group by host,key_,value_avg
+having count(*)>1) as t  
+group by host,key_ 
+
+
+-- 10.1.2.241
+select *from hosts;
+
+select *from items where  EXISTS (select hostid from hosts_groups where groupid=203);
+select *from trends where EXISTS (select itemid from (select itemid from items where  EXISTS (select hostid from hosts_groups where groupid=203)));
+
+
+---
+在本地计算机上查：
+select  a.`host`,a.key_,b.value_avg/1024/1024/1024 from host_items a,trends_unitsss b
+where a.itemid=b.itemid;
+
+--
+查找inventory-software
+select * from host_inventory a
+where 
+ a.hostid in(select hostid from hosts_groups where groupid=199);

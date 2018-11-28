@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>Metronic | Form Stuff - Form Layouts</title>
+
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+	<meta content="" name="description" />
+
+	<meta content="" name="author" />
+
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+	<link href="/static/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+	
+
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+	<link rel="shortcut icon" href="/static/image/favicon.ico" />
+	
+	<!--引用SweetAlert的css-->
+	<link rel="stylesheet" href="/static/css/sweetalert/sweetalert.css" />
+	<link rel="stylesheet" href="/static/css/sweetalert/sweetalert.min.css" />
+	<!--多选插件-->
+	<link href="/static/js/multiple-select-master/multiple-select.css" rel="stylesheet" type="text/css"/>
+	<link href="/static/css/bootstrap-multiselect/bootstrap-multiselect.css" rel="stylesheet" type="text/css"/>
+	<!--自定义添加bootstrap3的样式-->
+	<link rel="stylesheet" href="/static/css/bootstrap-multiselect/from_bootstrap3.css" />	
+	
+	<!--添加时间插件-->
+	<link rel="stylesheet" href="/static/css/bootstrap-datetimepicker-master/bootstrap-datetimepicker.css" />
+	<link rel="stylesheet" href="/static/css/bootstrap-datetimepicker-master/bootstrap-datetimepicker.min.css" />
+	
+	
+
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed">
+
+	<!-- BEGIN HEADER -->
+
+	<div class="header navbar navbar-inverse navbar-fixed-top">
+
+		<!-- BEGIN TOP NAVIGATION BAR -->
+
+		<div class="navbar-inner">
+
+			<div class="container-fluid">
+
+				<!-- BEGIN LOGO -->
+
+				<a class="brand" href="index.html">
+
+				<img src="/static/image/logo.png" alt="logo" />
+
+				</a>
+
+				<!-- END LOGO -->
+
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+				<img src="/static/image/menu-toggler.png" alt="" />
+
+				</a>          
+
+				<!-- END RESPONSIVE MENU TOGGLER -->            
+
+				<!-- BEGIN TOP NAVIGATION MENU -->              
+
+				<ul class="nav pull-right">
+
+
+					
+
+					<!-- BEGIN USER LOGIN DROPDOWN -->
+
+					<li class="dropdown user">
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+						<img alt="" src="/static/image/avatar1_small.jpg" />
+
+						<span class="username">Bob Nilson</span>
+
+						<i class="icon-angle-down"></i>
+
+						</a>
+
+						<ul class="dropdown-menu">
+
+							<li><a href="extra_profile.html"><i class="icon-user"></i> My Profile</a></li>
+
+							
+							<li class="divider"></li>
+
+							<li><a href="extra_lock.html"><i class="icon-lock"></i> 锁屏</a></li>
+
+							<li><a href="/logout/"><i class="icon-key"></i> 退出</a></li>
+
+						</ul>
+
+					</li>
+
+					<!-- END USER LOGIN DROPDOWN -->
+
+				</ul>
+
+				<!-- END TOP NAVIGATION MENU --> 
+
+			</div>
+
+		</div>
+
+		<!-- END TOP NAVIGATION BAR -->
+
+	</div>
+
+	<!-- END HEADER -->
+
+	<!-- BEGIN CONTAINER -->
+
+	<div class="page-container row-fluid">
+
+		<!-- BEGIN SIDEBAR -->
+
+		<div class="page-sidebar nav-collapse collapse">
+
+			<!-- BEGIN SIDEBAR MENU -->        
+
+			<ul class="page-sidebar-menu">
+
+				<li>
+
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+
+					<div class="sidebar-toggler hidden-phone"></div>
+
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+
+				</li>
+
+
+				<li class="start active ">
+
+					<a href="index.html">
+
+					<i class="icon-home"></i> 
+
+					<span class="title">仪表盘</span>
+
+					<span class="selected"></span>
+
+					</a>
+
+				</li>
+
+
+
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">资产管理</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="/cmdb" target="_Blank">
+
+							服务器管理</a>
+
+						</li>
+						<li >
+
+							<a href="/minion_key" target="_Blank">
+
+							salt_key管理</a>
+
+						</li>
+
+
+
+
+					</ul>
+
+				</li>
+				
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">批量及自动化</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="/exec_cmd" target="_Blank">
+
+							salt命令及执行</a>
+
+						</li>
+
+
+						<li>
+
+							<a href="/git_manage" target="_Blank">
+
+
+							git项目管理
+
+
+							</a>
+
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">业务监控</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+
+							<a href="/zabbix_minion" target="_Blank">
+
+							<i class="icon-cogs"></i> 
+
+							监控数据图
+
+
+							</a>
+
+
+						</li>
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-globe"></i> 
+
+							项目管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#">
+
+							<i class="icon-folder-open"></i>
+
+							Item 3
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">服务管理</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+
+							<a href="/service_manage" target="_Blank">
+
+							<i class="icon-cogs"></i> 
+
+							服务管理
+
+
+							</a>
+
+
+
+						</li>
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-globe"></i> 
+
+							项目管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#">
+
+							<i class="icon-folder-open"></i>
+
+							Item 3
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">故障管理</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-cogs"></i> 
+
+							服务管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li>
+
+									<a href="javascript:;">
+
+									<i class="icon-user"></i>
+
+									Sample Link 1
+
+									<span class="arrow"></span>
+
+									</a>
+
+									<ul class="sub-menu">
+
+										<li><a href="#"><i class="icon-remove"></i> Sample Link 1</a></li>
+
+										<li><a href="#"><i class="icon-pencil"></i> Sample Link 1</a></li>
+
+										<li><a href="#"><i class="icon-edit"></i> Sample Link 1</a></li>
+
+									</ul>
+
+								</li>
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 2</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 3</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-globe"></i> 
+
+							项目管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#">
+
+							<i class="icon-folder-open"></i>
+
+							Item 3
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">日志审计</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+
+							<a href="/log_view" target="_Blank">
+
+							<i class="icon-cogs"></i> 
+
+							日志列表
+
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-globe"></i> 
+
+							项目管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#">
+
+							<i class="icon-folder-open"></i>
+
+							Item 3
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+
+				<li class="">
+
+					<a href="javascript:;">
+
+					<i class="icon-user"></i> 
+
+					<span class="title">后台管理</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="/admin" target="_Blank">
+
+							后台登录</a>
+
+						</li>
+
+
+					</ul>
+
+				</li>
+
+				<li class="">
+
+					<a href="javascript:;">
+
+					<i class="icon-th"></i> 
+
+					<span class="title">数据表</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="/table_basic/">
+
+							基本表</a>
+
+						</li>
+
+						<li >
+
+							<a href="/table_responsive">
+
+							响应表</a>
+
+						</li>
+
+						<li >
+
+							<a href="/table_managed">
+
+							 可管理表</a>
+
+						</li>
+
+						<li >
+
+							<a href="/table_editable">
+
+							可编辑表</a>
+
+						</li>
+
+						<li >
+
+							<a href="/table_advanced">
+
+							高级表</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+
+			</ul>
+			<!-- END SIDEBAR MENU -->
+
+		</div>
+
+		<!-- END SIDEBAR -->
+
+		<!-- BEGIN PAGE -->  
+
+		<div class="page-content">
+
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<div id="portlet-config" class="modal hide">
+
+				<div class="modal-header">
+
+					<button data-dismiss="modal" class="close" type="button"></button>
+
+					<h3>portlet Settings</h3>
+
+				</div>
+
+				<div class="modal-body">
+
+					<p>Here will be a configuration form</p>
+
+				</div>
+
+			</div>
+
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<!-- BEGIN PAGE CONTAINER-->
+
+			<div class="container-fluid">
+
+				<!-- BEGIN PAGE HEADER-->   
+
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<!-- BEGIN STYLE CUSTOMIZER -->
+
+						<div class="color-panel hidden-phone">
+
+							<div class="color-mode-icons icon-color"></div>
+
+							<div class="color-mode-icons icon-color-close"></div>
+
+							<div class="color-mode">
+
+								<p>THEME COLOR</p>
+
+								<ul class="inline">
+
+									<li class="color-black current color-default" data-style="default"></li>
+
+									<li class="color-blue" data-style="blue"></li>
+
+									<li class="color-brown" data-style="brown"></li>
+
+									<li class="color-purple" data-style="purple"></li>
+
+									<li class="color-grey" data-style="grey"></li>
+
+									<li class="color-white color-light" data-style="light"></li>
+
+								</ul>
+
+								<label>
+
+									<span>Layout</span>
+
+									<select class="layout-option m-wrap small">
+
+										<option value="fluid" selected>Fluid</option>
+
+										<option value="boxed">Boxed</option>
+
+									</select>
+
+								</label>
+
+								<label>
+
+									<span>Header</span>
+
+									<select class="header-option m-wrap small">
+
+										<option value="fixed" selected>Fixed</option>
+
+										<option value="default">Default</option>
+
+									</select>
+
+								</label>
+
+								<label>
+
+									<span>Sidebar</span>
+
+									<select class="sidebar-option m-wrap small">
+
+										<option value="fixed">Fixed</option>
+
+										<option value="default" selected>Default</option>
+
+									</select>
+
+								</label>
+
+								<label>
+
+									<span>Footer</span>
+
+									<select class="footer-option m-wrap small">
+
+										<option value="fixed">Fixed</option>
+
+										<option value="default" selected>Default</option>
+
+									</select>
+
+								</label>
+
+							</div>
+
+						</div>
+
+						<!-- END BEGIN STYLE CUSTOMIZER -->  
+
+						<h3 class="page-title">
+
+							欢迎{{user}}
+
+						</h3>
+
+
+					</div>
+
+				</div>
+				<!-- END PAGE HEADER-->
+				<!--查询区from-->
+				<div class="panel panel-default">
+    			<div class="panel-body">
+				<form method="get" id="myform" action="/zabbix_get_graph/">
+				<!--action="/zabbix_minion/zabbix_get_graph/-->
+				<div class="row-fluid">
+							<div class="span3">
+								<div class="control-group">
+								<input type="text" placeholder="不知道机器所属组时使用" name="zabbix_minion_name" id="zabbix_minion_name" class="m-wrap span12" >
+								</div>
+							</div>
+				
+							
+							<div class="span3">
+								<div class="control-group">
+								<select id="zabbix_minion_group_multiple" size="2">
+								{% for item in group_list %}
+								<option>{{item.group_name}}</option>
+								{% endfor %}
+								</select>  
+								</div>
+							</div>
+							
+							<div class="span3">
+								<div class="control-group">
+								<select id="zabbix_minion_host_multiple" name="zabbix_minion_host_multiple" size="2">
+								</select>  
+								</div>
+							</div>
+							
+							<div class="span3">
+								<div class="control-group">
+								
+								<select id="zabbix_minion_graph" name="zabbix_minion_graph" multiple="multiple" size="2">
+								</select>
+								</div>
+							</div>
+							
+							
+							</div>
+													<div class="row-fluid">
+													<div class="span5 ">
+
+														<div class="control-group">
+
+
+															<div class="controls">
+
+																<input type="text" name="zabbix_minion_starttime" id="zabbix_minion_starttime" class="m-wrap span12" placeholder="开始时间">
+
+
+															</div>
+
+														</div>
+
+													</div>
+													
+													<div class="span5 ">
+
+														<div class="control-group">
+
+
+															<div class="controls">
+
+																<input type="text" name="zabbix_minion_endtime" id="zabbix_minion_endtime" class="m-wrap span12" placeholder="结束时间">
+
+
+															</div>
+
+														</div>
+
+													</div>
+													<div class="span2">
+
+														<div class="control-group">
+
+
+															<div class="controls">
+															<!--<submit>-->
+															<button type="button" id="graph_search" class="btn btn-primary blue host_info"><i class="icon-search"></i>搜索</button>
+															<!--<button type="submit">搜索</button>-->
+															</div>
+
+														</div>
+
+													</div>
+													</div>
+				<div class="row-fluid" id="search_time">
+				<div class="span1 ">	
+				<a onclick="changeTime('1hour');" href="javascript:void(0);">1小时</a>
+				</div>
+				<div class="span1 ">	
+				<a onclick="changeTime('2hour');" href="javascript:void(0);">2小时</a>
+				</div>
+				<div class="span1 ">	
+				<a onclick="changeTime('1days');" style="color: red; text-decoration: none;" href="javascript:void(0);">1天</a>
+				</div>
+				<div class="span1 ">	
+				<a onclick="changeTime('2days');" href="javascript:void(0);">2天</a>
+				</div>
+				<div class="span1 ">	
+				<a onclick="changeTime('7days');" href="javascript:void(0);">7天</a>
+				</div>
+				<div class="span1 ">	
+				<a onclick="changeTime('30days');" href="javascript:void(0);">30天</a>
+				</div>
+				<div class="span1 ">	
+				<a onclick="changeTime('1years');" href="javascript:void(0);">1年</a>
+				</div>
+				<div class="span1 ">	
+				<a onclick="changeTime('2years');" href="javascript:void(0);">2年</a>
+				</div>
+				</div>	
+				</form>
+											
+				</div>
+				</div>
+				<!-- BEGIN PAGE CONTENT-->
+
+				
+				
+<div class="row-fluid">
+<div class="span12">				
+<!--<div id="container" style="width: 550px; height: 400px; margin: 0 auto">-->
+<div id="container" style="max-width:800px;height:500px"></div>
+{% for row in result %}
+         		{% for item in row %}
+                      {{item.value}}
+                 {% endfor %}
+                 {% endfor %}
+</div>
+</div>
+</div>
+
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+	<!-- BEGIN CORE PLUGINS -->
+
+	<script src="/static/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+	<script src="/static/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<script src="/static/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+	<script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+	
+	
+
+	<!--[if lt IE 9]>
+
+	<script src="/static/js/excanvas.min.js"></script>
+
+	<script src="/static/js/respond.min.js"></script>  
+
+	<![endif]-->   
+
+	<script src="/static/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+	<script src="/static/js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+	<script src="/static/js/jquery.cookie.min.js" type="text/javascript"></script>
+
+	<script src="/static/js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+	<!-- END CORE PLUGINS -->
+
+	<script src="/static/js/app.js"></script>     
+	<!--调用自定义的js方法-->
+	<script src="/static/js/salt_api/exec_cmd.js" type="text/javascript"></script>
+	
+	
+	<!--引用SweetAlert的js-->
+	<script src="/static/js/sweetalert/sweetalert.min.js"></script> 
+	<script src="/static/js/sweetalert/sweetalert-dev.js"></script> 
+	<script src="/static/js/sweetalert/sweetalert-dev.min.js"></script> 
+		
+	<script>
+
+		jQuery(document).ready(function() {   
+		   App.init();
+		});
+
+
+//前台根据机器IP定位所在的组
+
+	$("#zabbix_minion_name").blur(function(){
+	  var host_ip = $("#zabbix_minion_name").val()
+	  //根据IP获取对应的组
+	  $.get("/zabbix_minion/zabbix_get_group",{"host_ip":host_ip}, function(i,item){
+	  	
+	  	//设置多选插件为选中状态
+	  	if (i ==''){
+	  		swal( '警告','对有对应的主机','warning')
+	  	}
+	  	else{
+	  		var host_group_name = i[0].group_name;
+	  		$("#zabbix_minion_group_multiple").multiselect('select',host_group_name)
+	  		//重新生成该组对应的一些主机
+	  		$.get("zabbix_get_host",{"group_name":host_group_name}, function(ret){
+						//根据ajax结果获取后台对应的host的IP
+						for (var i = 0; i < ret.length; i++){
+							//$("#zabbix_minion_host_multiple").html(""); 
+							//$("#zabbix_minion_host_multiple").empty()
+							$("#zabbix_minion_host_multiple").append("<option value=" + i + ">" + ret[i].ip + "</option>");  
+							//$("#edit_config_multiple").append("<option value="+i+">" + ret[i].ip + "</option>");
+						};
+						$('#zabbix_minion_host_multiple').multiselect('rebuild')
+					});
+	  	}
+  });
+  //$("#zabbix_minion_group_multiple option:contains('"+host_group_name+"')").attr('selected', true);
+  //$("#zabbix_minion_group_multiple1").find("option[text='February']").attr("selected",true);
+  //$("#zabbix_minion_group_multiple1 option[value='3']").attr("selected","selected");
+  //$("#zabbix_minion_group_multiple1").val('3')
+  //$("#zabbix_minion_group_multiple1").text('March')jquery版本有些无作用
+  //$("#zabbix_minion_group_multiple option:contains('db组')").attr('selected', true);
+  //$("#zabbix_minion_group_multiple1").find("option[text='March']").attr("selected","selected");
+});
+
+
+<!--将时间戳转换成日期格式-->
+function timestampToTime(timestamp) {
+        var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+        Y = date.getFullYear() + '-';
+        M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+        D = date.getDate() + ' ';
+        h = date.getHours() + ':';
+        m = date.getMinutes() + ':';
+        s = date.getSeconds();
+        return Y+M+D+h+m+s;
+    }
+console.log("时间转换",timestampToTime(1517973856))
+
+
+<!--图形处理中的数据garph_data[[时间戳],[9874]]-->
+garph_data1=[]
+garph_data2=[]
+garph_data3=[]
+<!--获取key值-->
+var key_ = ''
+
+
+function get_graph_data()
+{
+	//通过前台获取itemid与监控项的key_值
+key_itemid = []
+var k_v={}//临时用来装字典的
+$("#zabbix_minion_graph :selected").each(function(i,selected){
+	key_ = $(selected).text()
+	itemid = $(selected).val()
+	//取出itemid，比如28308_B_3横线后的值，B为数据单位，只在为history_type,这是api里的history字段的值
+	//取数据的单位
+	units = itemid.substring(itemid.indexOf("_")+1,itemid.lastIndexOf("_"))
+	history_type=itemid.substring(itemid.lastIndexOf("_")+1,itemid.length);
+	itemid=itemid.substring(0, itemid.indexOf("_"))
+	//添加为字典
+	key_itemid.push(
+	{
+		key_ : key_,
+		itemid : itemid,
+		history_type : history_type,
+		units : units
+	}
+	)
+	//转换为 JSON 字符串。使用ajax传给后台 
+	items = JSON.stringify(key_itemid)
+});
+				//获取zabbix监控项的值
+				key_ = $("#zabbix_minion_graph").find("option:selected").text();
+				if(key_==null||key_=="")//判断是否为空
+				{
+					swal( '警告','未选中键值或未连上zabbix主机','warning')
+				}
+				else{
+				//首先清空garph_data里的数据，因为定义的是全局变量
+				garph_data = []
+				var item_id=$("#zabbix_minion_graph").val();
+        		console.log("获得的item_id值",item_id);
+        		console.log("获得的graph_key值",key_);
+        		//开始结束时间
+				time_from = $("#zabbix_minion_starttime").val();
+				time_till = $("#zabbix_minion_endtime").val();
+				//搜索框机器IP这是key值
+				zabbix_minion_name = $("#zabbix_minion_name").val()
+				$.ajax({ 
+				          url:'/zabbix_minion/zabbix_get_graph',
+				          type:'GET', 
+				          traditional:true,
+				          data:{"key_itemid":items,"time_from":time_from,"time_till":time_till,"zabbix_minion_name":zabbix_minion_name},
+				          //dataType:'json',
+				          //timeout:15000, 
+				          beforeSend:function(XMLHttpRequest){ 
+				              //添加动画，显示正在处理中..
+				            //	swal({
+//		        	            title:'loading...',
+//		        	            text:'正在加载数据',
+//		        	            imageUrl:'/static/image/ajax-loading.gif',
+//		        	            showConfirmButton: false//去掉确认的按钮
+//		        	        });
+				         }, 
+				         success:function(ret,textStatus){ 
+				         count = 0;
+				         var map = {}//为分类后要显示出来的数据
+				         var key_= [];//获取所有的item监控项的key值
+				         $.each(ret,function(i,item){
+				         	key_.push(i);
+				         	count++;//表示有多少个监控项
+				         	garph_data=[]//清空列表数据
+				         	console.log("这是key值",i)
+				         	console.log("这是key对应的数据数据",item)//item是[{}{}]结构
+				         	console.log("这是key对应的数据数据",item[0].value)//item是[{}{}]结构
+				         	//添加到map来分组
+				         	map[i] = item;
+				         	console.log("mapmapmap",map)
+				         	
+				         });//each循环结束
+				         //处理返回的结果
+				         var temp_data = []
+				         temp = []
+				         	for(i in key_){
+				         		var arr = []//清空arr，让其重新被赋值
+				         		dest = {}
+				         		temp_data = map[key_[i]]//这是每个监控项下的值，结构为[{},{}]
+				         	 	for (j in temp_data){
+				         	 		//处理[{}{}]结构为[[],[]]的结构，并且将里面的4个值提取出2个值,clock与value
+				         	 		if(isNaN(temp_data[j].value))//判断值是否为数字,否的话则为真
+				         	 		{
+				         	 			arr.push([temp_data[j].value,parseFloat(temp_data[j].clock)*1000])//字符串的话就将字符串为x轴，时间为y轴
+				         	 		}
+				         	 		else
+				         	 		{
+				         	 			arr.push([parseFloat(temp_data[j].clock)*1000,parseFloat(temp_data[j].value)])
+				         	 		}
+				         	 }
+				         	var j_rel = {};
+				         	//设置成与highcharts中定义的series一样['name':aa,'data',b]这种形式
+				         	j_rel['units'] = key_[i].substring(key_[i].lastIndexOf("_"),key_[i].length);//数据单位
+				         	j_rel['name'] = key_[i]//.substring(0,key_[i].indexOf("_"))
+				         	console.log("j_rel['name']",j_rel['name'])
+				         	j_rel['data'] = arr
+				         	//j_rel[key_[i]] = arr
+				         	garph_data.push(j_rel)// [{…}, {…}, {…}]这种形式
+				         	console.log("j_rel["+i+"]",j_rel)
+				         	//console.log("garph_data"+i,garph_data[i])
+				         	}
+				         	
+				         	console.log("garph_data",garph_data)
+				         	
+				         	
+				         	console.log("count",count)//这是前台选中的监控项的值
+				         	//设置series
+				         	for(i in garph_data)
+				         	{
+				         		for (x in garph_data[i])
+				         		{	
+				         			console.log("获取garph_data的key值",x)
+				         			console.log("xxxxx",garph_data[i][x])
+				         		}
+				         		
+				         	}
+				         	huatu(garph_data)
+				         }, 
+				          complete:function(XMLHttpRequest,textStatus){ 
+				           }, 
+				           error:function(XMLHttpRequest,textStatus,errorThrown){ 
+				              swal(
+				                    	      textStatus,
+				                    	     errorThrown,
+				                    	      'error'
+				                    )
+				          } 
+					});//ajax结束
+}//if结束
+}
+
+$("#graph_search").click(function(){
+	//调用上面的方法
+	get_graph_data()
+});
+
+//定义画图函数,garph_data为highcharts的series
+
+/*
+var series= [{
+         name: 'Tokyo',
+         data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+      }, {
+         name: 'London',
+         data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+      }
+   ];
+*/
+function huatu(garph_data)
+{
+//这里不设置的话就少了8小时了
+Highcharts.setOptions({ global: { useUTC: false } });
+var chart = Highcharts.chart('container', {
+    title: {
+      text: 'zabbix数据展示'   
+   },
+   subtitle: {
+      text: '图例下划线后面是数据单位'
+   },
+   
+   global: {  
+    useUTC: false
+    //timezoneOffset: +8 * 60
+    },
+   //去水印
+   credits: {  
+          enabled:false  
+	},
+   xAxis: {
+       	type:"datetime",//时间轴要加上这个type，默认是linear  
+                maxPadding : 0.05,  
+                minPadding : 0.05,  
+                tickInterval : 1 * 60 * 1000,//两天画一个x刻度  
+                                //或者150px画一个x刻度，如果跟上面那个一起设置了，则以最大的间隔为准  
+                tickPixelInterval : 150,  
+                tickWidth:5,//刻度的宽度  
+                lineColor : '#990000',//自定义刻度颜色  
+                lineWidth :3,//自定义x轴宽度  
+                gridLineWidth :1,//默认是0，即在图上没有纵轴间隔线  
+                /*labels: {  
+                        step: 4,   
+                        formatter: function () {  
+                            return Highcharts.dateFormat('%Y-%m-%d', this.value);  
+                        }  
+                    },*/
+                //自定义x刻度上显示的时间格式，根据间隔大小，以下面预设的小时/分钟/日的格式来显示  
+                dateTimeLabelFormats:  
+                {  
+                    day: '%Y-%m-%d',  
+                }              
+   },
+   
+   scrollbar: {
+        enabled: true
+    },
+   yAxis: {
+      title: {
+         text: '动态值',
+        lineColor : '#FF0000',//自定义刻度颜色  
+        lineWidth :300,//自定义x轴宽度  
+        gridLineWidth :0,//默认是0，即在图上没有纵轴间隔线  
+      },
+      plotLines: [{
+         value: 0,
+         width: 1,
+         color: '#808080'
+      }]
+   },   
+
+   tooltip: {
+   /*
+   	pointFormat: '<tr><td style="color: {series.color}">{series.name}: </td>' +
+        '<td style="text-align: right"><b>{point.y} EUR</b></td></tr>',
+   	formatter: function () {
+    		var a = 'sss'
+            return 'The value for <b>' + this.x +'ssss'+a +
+                '</b> is <b>' + this.y + '</b>';
+        },
+   */
+    shared: true,
+    useHTML: true,
+    dateTimeLabelFormats: {
+ 
+    day:"%Y-%m-%d %H:%M:%S"
+ 
+                         },
+    headerFormat: '<table><tr><td style="color:{series.color}"> <small>{point.key}</small><br/></td></tr>',
+    pointFormatter: function() {
+    var show_name = this.series.name.substring(0,this.series.name.indexOf("_"))
+    var show_units = this.series.name.substring(this.series.name.lastIndexOf("_")+1,this.series.name.length)
+    return '<tr><td style="color:'+this.series.color+' ">'+show_name+': </td>' +
+        '<td style="text-align: right;color:'+this.series.color+'"><b>'+this.y+show_units+'</b></td></tr>';
+},
+    footerFormat: '</table>',
+    valueDecimals: 2
+   },
+
+   legend: {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle',
+      borderWidth: 0
+   },
+   series:  garph_data
+});
+   //$('#container').highcharts(json);
+}
+
+//a标签的changeTime()函数
+function changeTime(time)
+{
+	var now = new Date().getTime();//获取当前时间
+	var yesterdsay = new Date(new Date().getTime() - 86400000)//Sun Feb 25 2018 15:12:54 GMT+0800 (中国标准时间)
+	//转换，处理10与10以上的数字显示方式
+	function p(s) {
+    	return s < 10 ? '0' + s: s;
+	}
+	//格式化时间为2018-02-25 15:18:37这种格式
+	function formatTime(myDate){//myDate的格式为Sun Feb 25 2018 15:12:54 GMT+0800 (中国标准时间)
+		//获取当前年
+		var year=myDate.getFullYear();
+		//获取当前月
+		var month=myDate.getMonth()+1;
+		//获取当前日
+		var date=myDate.getDate(); 
+		var h=myDate.getHours();       //获取当前小时数(0-23)
+		var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+		var s=myDate.getSeconds();  
+		return year+'-'+p(month)+"-"+p(date)+" "+p(h)+':'+p(m)+":"+p(s);
+	}
+//定义一个全局变量oldtime转换成秒，使用timestamp时要乘以1000
+oldtime=''
+//根据前台点击的数字来计算前后时间
+switch(time){
+	case ("1hour"):
+	//1时(h)=3600000毫秒(ms),1000×60×60=3 600 000
+	oldtime = 1 * 3600000
+	break;
+	case ("2hour"):
+	oldtime = 2 * 3600000;
+	break;
+	case ("1days"):
+	oldtime = 24 * 3600000;
+	break;
+	case ("2days"):
+	oldtime = 48 * 3600000;
+	break;
+	case ("7days"):
+	oldtime = 7 * 24 * 3600000;
+	break;
+	case ("30days"):
+	oldtime = 30 * 24 * 3600000;
+	break;
+	case ("1years"):
+	oldtime = 365 * 24 * 3600000;
+	break;
+	case ("2years"):
+	oldtime = 2 * 365 * 24 * 3600000;
+	break;
+}
+//处理后的时间
+pre_time = formatTime(new Date(new Date().getTime() - oldtime))
+$("#zabbix_minion_starttime").attr("value", pre_time);//设置开始时间
+$("#zabbix_minion_endtime").attr("value", formatTime(new Date(new Date().getTime())));//设置结束时间
+var list=Array();
+                list['1hour']='1小时';
+                list['2hour']='2小时';
+                list['1days']='1天';
+                list['2days']='2天';
+                list['7days']='7天';
+                list['30days']='30天';
+                list['1years']='1年';
+                list['2years']='2年';
+                
+                console.log("传入的值",time)
+                /*var all_item = $("#search_time a")
+                console.log("all_item",all_item)
+                for (var i = 0; i < all_item.length; i++) 
+                {
+                	all_item[i].style.color="blue";
+                	//if(list[time] == all_item[i])
+                	$(this).css("color","red");
+                	
+                	console.log("this",all_item[i].innerHTML)
+                	//this.style.color='red';
+                }*/
+                /*function cleanStyle(){//定义一个清除style的方法
+	                $("#search_time a").each(function(){
+	                //$(this).attr("style","text-decoration:none;color:blue;");
+	                //传入值与当前值相等
+	                //if(list[time] == $(this).text()){
+	           		//$("#item").attr("style","text-decoration:none;color:green;")
+	                //$(this).removeAttr("onclick");
+	                $(this).removeAttr("style")
+	                   });
+                }
+                function addStyle(){
+                	$("#search_time a").each(function(i,item){
+                	if(list[time] == $(this).text()){
+                		$(this).attr("style","text-decoration:none;color:red;");
+                	}
+                	$(this).attr("onclick","changeTime("+$(this).text())+"")
+                	});
+                }
+                 cleanStyle();//调用上面的方法  
+                 addStyle();//改变颜色
+                 */
+                 //$(this).attr("style","text-decoration:none;color:red;");
+                 $("#search_time a").each(function(i,item){
+                 	$(this).removeAttr("style")
+                	if(list[time] == $(this).text()){
+                		$(this).attr("style","text-decoration:none;color:red;");
+                	}
+                	});
+                	
+                	//提交表单
+                	var form = document.getElementById("myform");
+    				//form.submit();
+
+}
+
+
+
+
+
+
+
+
+	</script>
+	<!--多选插件-->
+	<script src="/static/js/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+	<script src="/static/js/multiple-select-master/multiple-select.js"></script>
+	
+	<!--自定义插件-->
+	<script src="/static/js/zabbix_monitor/zabbix_monitor.js"></script>
+	<!--添加时间插件-->
+	<script src="/static/js/bootstrap-datetimepicker-master/bootstrap-datetimepicker.js"></script> 
+	<script src="/static/js/bootstrap-datetimepicker-master/bootstrap-datetimepicker.min.js"></script> 
+	<script src="/static/js/bootstrap-datetimepicker-master/bootstrap-datetimepicker.zh-CN.js"></script> 
+	<!--添加绘图插件-->
+	<script src="/static/Highcharts-6.0.4/highcharts.js"></script> 
+	<!-- END JAVASCRIPTS -->   
+
+</body>
+
+<!-- END BODY -->
+
+</html>

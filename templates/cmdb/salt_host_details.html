@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+
+
+{% block page-content %}
+							<div class="modal-body">
+									<!--内容-->
+									<!--添加一个form在js中可以以form为目标，将表格中的数据赋值到下面去-->
+									<form id="host_see" class="form-horizontal">
+												<div class="row-fluid host_">
+
+													<div class="span6">
+
+														<div class="control-group">
+														
+															<div class="controls">
+															<label class="control-label" for="ip">IP地址:</label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" for="firstName">服务器名称:</label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" for="firstName">应用:</label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" for="firstName">用户名称:</label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" for="firstName">OS平台:</label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" for="firstName">ssh端口:</label>
+															</div>
+
+														</div>
+													</div>
+
+												<!--/row-->
+
+
+													<div class="span6 ">
+
+														<div class="control-group">
+
+															<div class="controls">
+															<label class="control-label" id="host_info_ip"></label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" id="host_info_hostname"></label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" id="host_info_application"></label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" id="host_info_username"></label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" id="host_info_ostype"></label>
+															</div>
+															
+															<div class="controls">
+															<label class="control-label" id="host_info_port"></label>
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+												
+										</form>
+												
+
+
+									<div class="modal-footer">
+
+										<button type="button" data-dismiss="modal" class="btn" >Close</button>
+
+										<button type="button" data-dismiss="modal" class="btn red">Ok</button>
+
+									</div>
+
+								</div>
+                                    
+                                             <!--<详情模态框>-->
+                                            {% endblock %}

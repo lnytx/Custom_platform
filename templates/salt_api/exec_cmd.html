@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>Metronic | Form Stuff - Form Layouts</title>
+
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+	<meta content="" name="description" />
+
+	<meta content="" name="author" />
+
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+	<link href="/static/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+	<link href="/static/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+	
+
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+	<link rel="shortcut icon" href="/static/image/favicon.ico" />
+	
+	<!--引用SweetAlert的css-->
+	<link rel="stylesheet" href="/static/css/sweetalert/sweetalert.css" />
+	<link rel="stylesheet" href="/static/css/sweetalert/sweetalert.min.css" />
+	<!--多选插件-->
+	<link href="/static/js/multiple-select-master/multiple-select.css" rel="stylesheet" type="text/css"/>
+	<link href="/static/css/bootstrap-multiselect/bootstrap-multiselect.css" rel="stylesheet" type="text/css"/>
+	<!--自定义样式-->
+	<!--<link href="/static/css/bootstrap-multiselect/mymultiselect.css" rel="stylesheet" type="text/css"/>-->
+	<!--自定义添加bootstrap3的样式-->
+	<link rel="stylesheet" href="/static/css/bootstrap-multiselect/from_bootstrap3.css" />	
+	
+
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed">
+
+	<!-- BEGIN HEADER -->
+
+	<div class="header navbar navbar-inverse navbar-fixed-top">
+
+		<!-- BEGIN TOP NAVIGATION BAR -->
+
+		<div class="navbar-inner">
+
+			<div class="container-fluid">
+
+				<!-- BEGIN LOGO -->
+
+				<a class="brand" href="index.html">
+
+				<img src="/static/image/logo.png" alt="logo" />
+
+				</a>
+
+				<!-- END LOGO -->
+
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+				<img src="/static/image/menu-toggler.png" alt="" />
+
+				</a>          
+
+				<!-- END RESPONSIVE MENU TOGGLER -->            
+
+				<!-- BEGIN TOP NAVIGATION MENU -->              
+
+				<ul class="nav pull-right">
+
+
+					
+
+					<!-- BEGIN USER LOGIN DROPDOWN -->
+
+					<li class="dropdown user">
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+						<img alt="" src="/static/image/avatar1_small.jpg" />
+
+						<span class="username">Bob Nilson</span>
+
+						<i class="icon-angle-down"></i>
+
+						</a>
+
+						<ul class="dropdown-menu">
+
+							<li><a href="extra_profile.html"><i class="icon-user"></i> My Profile</a></li>
+
+							
+							<li class="divider"></li>
+
+							<li><a href="extra_lock.html"><i class="icon-lock"></i> 锁屏</a></li>
+
+							<li><a href="/logout/"><i class="icon-key"></i> 退出</a></li>
+
+						</ul>
+
+					</li>
+
+					<!-- END USER LOGIN DROPDOWN -->
+
+				</ul>
+
+				<!-- END TOP NAVIGATION MENU --> 
+
+			</div>
+
+		</div>
+
+		<!-- END TOP NAVIGATION BAR -->
+
+	</div>
+
+	<!-- END HEADER -->
+
+	<!-- BEGIN CONTAINER -->
+
+	<div class="page-container row-fluid">
+
+		<!-- BEGIN SIDEBAR -->
+
+		<div class="page-sidebar nav-collapse collapse">
+
+			<!-- BEGIN SIDEBAR MENU -->        
+
+			<ul class="page-sidebar-menu">
+
+				<li>
+
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+
+					<div class="sidebar-toggler hidden-phone"></div>
+
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+
+				</li>
+
+
+				<li class="start active ">
+
+					<a href="index.html">
+
+					<i class="icon-home"></i> 
+
+					<span class="title">仪表盘</span>
+
+					<span class="selected"></span>
+
+					</a>
+
+				</li>
+
+
+
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">资产管理</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="/cmdb" target="_Blank">
+
+							服务器管理</a>
+
+						</li>
+						<li >
+
+							<a href="/minion_key" target="_Blank">
+
+							salt_key管理</a>
+
+						</li>
+
+
+
+
+					</ul>
+
+				</li>
+				
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">批量及自动化</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="/exec_cmd" target="_Blank">
+
+							salt命令及执行</a>
+
+						</li>
+
+
+						<li>
+
+							<a href="/git_manage" target="_Blank">
+
+
+							git项目管理
+
+
+							</a>
+
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">业务监控</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+
+							<a href="/zabbix_minion" target="_Blank">
+
+							<i class="icon-cogs"></i> 
+
+							监控数据图
+
+
+							</a>
+
+							
+
+						</li>
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-globe"></i> 
+
+							项目管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#">
+
+							<i class="icon-folder-open"></i>
+
+							Item 3
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">服务管理</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+
+							<a href="/service_manage" target="_Blank">
+
+							<i class="icon-cogs"></i> 
+
+							服务管理
+
+
+							</a>
+
+		
+
+						</li>
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-globe"></i> 
+
+							项目管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#">
+
+							<i class="icon-folder-open"></i>
+
+							Item 3
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">故障管理</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-cogs"></i> 
+
+							服务管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li>
+
+									<a href="javascript:;">
+
+									<i class="icon-user"></i>
+
+									Sample Link 1
+
+									<span class="arrow"></span>
+
+									</a>
+
+									<ul class="sub-menu">
+
+										<li><a href="#"><i class="icon-remove"></i> Sample Link 1</a></li>
+
+										<li><a href="#"><i class="icon-pencil"></i> Sample Link 1</a></li>
+
+										<li><a href="#"><i class="icon-edit"></i> Sample Link 1</a></li>
+
+									</ul>
+
+								</li>
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 2</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 3</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-globe"></i> 
+
+							项目管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#">
+
+							<i class="icon-folder-open"></i>
+
+							Item 3
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+				
+				
+				<li>
+
+					<a href="javascript:;">
+
+					<i class="icon-folder-open"></i> 
+
+					<span class="title">日志审计</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li>
+
+							<a href="/log_view" target="_Blank">
+
+							<i class="icon-cogs"></i> 
+
+							日志列表
+
+
+							</a>
+
+						</li>
+
+						<li>
+
+							<a href="javascript:;">
+
+							<i class="icon-globe"></i> 
+
+							项目管理
+
+							<span class="arrow"></span>
+
+							</a>
+
+							<ul class="sub-menu">
+
+								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
+
+								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#">
+
+							<i class="icon-folder-open"></i>
+
+							Item 3
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+
+				<li class="">
+
+					<a href="javascript:;">
+
+					<i class="icon-user"></i> 
+
+					<span class="title">后台管理</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="/admin" target="_Blank">
+
+							后台登录</a>
+
+						</li>
+
+
+					</ul>
+
+				</li>
+
+				<li class="">
+
+					<a href="javascript:;">
+
+					<i class="icon-th"></i> 
+
+					<span class="title">数据表</span>
+
+					<span class="arrow "></span>
+
+					</a>
+
+					<ul class="sub-menu">
+
+						<li >
+
+							<a href="/table_basic/">
+
+							基本表</a>
+
+						</li>
+
+						<li >
+
+							<a href="/table_responsive">
+
+							响应表</a>
+
+						</li>
+
+						<li >
+
+							<a href="/table_managed">
+
+							 可管理表</a>
+
+						</li>
+
+						<li >
+
+							<a href="/table_editable">
+
+							可编辑表</a>
+
+						</li>
+
+						<li >
+
+							<a href="/table_advanced">
+
+							高级表</a>
+
+						</li>
+
+					</ul>
+
+				</li>
+
+			</ul>
+			<!-- END SIDEBAR MENU -->
+
+		</div>
+
+		<!-- END SIDEBAR -->
+
+		<!-- BEGIN PAGE -->  
+
+		<div class="page-content">
+
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<div id="portlet-config" class="modal hide">
+
+				<div class="modal-header">
+
+					<button data-dismiss="modal" class="close" type="button"></button>
+
+					<h3>portlet Settings</h3>
+
+				</div>
+
+				<div class="modal-body">
+
+					<p>Here will be a configuration form</p>
+
+				</div>
+
+			</div>
+
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<!-- BEGIN PAGE CONTAINER-->
+
+			<div class="container-fluid">
+
+				<!-- BEGIN PAGE HEADER-->   
+
+				<div class="row-fluid">
+
+					<div class="span12">
+
+						<!-- BEGIN STYLE CUSTOMIZER -->
+
+						<div class="color-panel hidden-phone">
+
+							<div class="color-mode-icons icon-color"></div>
+
+							<div class="color-mode-icons icon-color-close"></div>
+
+							<div class="color-mode">
+
+								<p>THEME COLOR</p>
+
+								<ul class="inline">
+
+									<li class="color-black current color-default" data-style="default"></li>
+
+									<li class="color-blue" data-style="blue"></li>
+
+									<li class="color-brown" data-style="brown"></li>
+
+									<li class="color-purple" data-style="purple"></li>
+
+									<li class="color-grey" data-style="grey"></li>
+
+									<li class="color-white color-light" data-style="light"></li>
+
+								</ul>
+
+								<label>
+
+									<span>Layout</span>
+
+									<select class="layout-option m-wrap small">
+
+										<option value="fluid" selected>Fluid</option>
+
+										<option value="boxed">Boxed</option>
+
+									</select>
+
+								</label>
+
+								<label>
+
+									<span>Header</span>
+
+									<select class="header-option m-wrap small">
+
+										<option value="fixed" selected>Fixed</option>
+
+										<option value="default">Default</option>
+
+									</select>
+
+								</label>
+
+								<label>
+
+									<span>Sidebar</span>
+
+									<select class="sidebar-option m-wrap small">
+
+										<option value="fixed">Fixed</option>
+
+										<option value="default" selected>Default</option>
+
+									</select>
+
+								</label>
+
+								<label>
+
+									<span>Footer</span>
+
+									<select class="footer-option m-wrap small">
+
+										<option value="fixed">Fixed</option>
+
+										<option value="default" selected>Default</option>
+
+									</select>
+
+								</label>
+
+							</div>
+
+						</div>
+
+						<!-- END BEGIN STYLE CUSTOMIZER -->  
+
+						<h3 class="page-title">
+
+							欢迎{{user}}
+
+						</h3>
+
+
+					</div>
+
+				</div>
+
+				<!-- END PAGE HEADER-->
+
+				<!-- BEGIN PAGE CONTENT-->
+
+				
+				
+				
+				
+				
+				
+				<div class="row-fluid">
+				<!--左边部分-->
+				<div class="span6">
+
+						<!-- BEGIN SAMPLE FORM PORTLET-->   
+
+						<div class="portlet box blue">
+
+							<div class="portlet-title">
+
+								<div class="caption">
+
+									<i class="icon-reorder"></i>
+
+									<span class="hidden-480">命令/模块执行</span>
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body form">
+
+								<div class="tabbable portlet-tabs">
+
+									<!--<ul class="nav nav-tabs">
+
+										<li><a href="#portlet_tab3" data-toggle="tab">Inline</a></li>
+
+										<li><a href="#portlet_tab2" data-toggle="tab">Grid</a></li>
+
+										<li class="active"><a href="#portlet_tab1" data-toggle="tab">Default</a></li>
+
+									</ul>-->
+									</div>
+									<div class="portlet-body">
+									<form action="#" class="control-group">
+
+
+								
+								<div class="tabbable tabbable-custom">
+							<ul class="nav nav-pills">
+							
+							<li class="dropdown active">
+								<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">yum源管理<b class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+									<li><a href="#yum_init" tabindex="-1" data-toggle="tab"  data-placement="bottom" title="初始化服务器，安装httpd等，并处理配置">yum源初始化</a></li>
+									<li><a href="#create_yum" tabindex="-1" data-placement="bottom" title="比如git,ssh等" data-toggle="tab">创建指定源</a></li>
+									<li><a href="#deploy_yum" tabindex="-1" data-placement="bottom" title="分发到指定的salt_minion服务器" data-toggle="tab">分发并安装rpm包</a></li>
+								</ul>
+							</li>
+							
+							
+							
+							<li class="dropdown">
+								<a href="#" id="myTabDrop2" class="dropdown-toggle" data-toggle="dropdown">版本管理 <b class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop2">
+									<li><a href="#deploy" tabindex="-1" data-toggle="tab">分发到各个服务器</a></li>
+									<li><a href="#rollback" tabindex="-1" data-toggle="tab">版本回滚</a></li>
+								</ul>
+							</li>
+							
+							<li class="dropdown">
+								<a href="#" id="myTabDrop3" class="dropdown-toggle" data-toggle="dropdown">多级菜单 <b class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop3">
+									<li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
+									<li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+									
+									<li class="dropdown-submenu" id="instance"><a href="#ejb" tabindex="-1" data-toggle="tab">实例状态</a>
+										<ul class="dropdown-menu pull-right">  
+								                  <li><a href="#">启动</a></li>  
+								                  <li><a href="#">停止</a></li>  
+								                  <li><a href="#">重启</a></li>
+								                  <li><a href="#">终止</a></li>
+								         </ul> 
+									</li>
+									
+										<li class="dropdown-submenu"> <a href="#gao3" tabindex="-1" data-toggle="tab">gao3</a>  
+								             <ul class="dropdown-menu pull-right">  
+								                  <li><a href="#">qiao1</a></li>  
+								                  <li><a href="#">qiao2</a></li>  
+								                  <li><a href="#">qiao3</a></li>  
+								             </ul>  
+								        </li>   
+								</ul>
+							</li>
+							
+<!--							<li class="dropdown">
+								<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Java <b class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+									<li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
+									<li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+								</ul>
+							</li>-->
+							
+							
+							<li class="dropdown">
+								<a href="#" id="myTabDrop4" class="dropdown-toggle" data-toggle="dropdown">服务器管理 <b class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop4">
+									<li><a href="#orders" tabindex="-1" data-toggle="tab">命令执行</a></li>
+									<li><a href="#edit_config" tabindex="-1" data-toggle="tab">文件修改</a></li>
+									<li><a href="#files" tabindex="-1" data-toggle="tab">文件上传</a></li>
+								</ul>
+							</li>
+							
+								
+								
+							</ul>
+						</div>
+						
+					<div id="myTabContent" class="tab-content">
+					
+						<div class="tab-pane fade in active" id="yum_init">
+						
+											<div class="row-fluid">
+						
+													<div class="span12 ">
+
+														<div class="control-group">
+														<h5>提交之后即可使用http://服务器/来访问,</h5>
+														<h5>在salt主服务器建立yum源</h5>
+														</div>
+
+													</div>
+													
+													</div>
+						
+						
+									<div class="row-fluid">
+						
+													<div class="span6 ">
+
+														<div class="control-group">
+														
+
+															<label class="control-label" for="firstName">访问端口</label>
+
+															<div class="controls">
+
+																<input type="text" placeholder="yum源访问端口号80,8080" id="yum_init_port" class="m-wrap span12" >
+
+															</div>
+
+														</div>
+
+													</div>
+													
+													
+													
+													</div>
+							
+						</div>
+						
+						
+					
+							<div class="tab-pane fade" id="create_yum">
+						
+											<div class="row-fluid">
+						
+													<div class="span12 ">
+
+														<div class="control-group">
+														<label class="control-label" for="firstName">包名(多个使用,号隔开)</label>
+
+															<div class="controls">
+
+																<input type="text" id="create_yum_name" placeholder="ssh,httpd,git" class="m-wrap span12" >
+
+
+															</div>
+														</div>
+
+													</div>
+													
+													</div>
+						
+							</div>
+								
+							<div class="tab-pane fade" id="deploy_yum">
+							
+							<div class="control-group">
+
+												<label class="control-label">选择组</label>
+
+												<div class="controls">
+
+													<select class="small m-wrap" id="deploy_yum_group" tabindex="1" onchange="deploy_yum_Onchang(this)">
+													</select>
+
+												</div>
+
+							</div>
+										<!--多选下拉框bootstrap-select实现-->
+										<!--<select  multiple="multiple">  -->
+										<select id="deploy_yum_multiple" multiple="multiple">
+								    	</select>  
+										<!--多选下拉框bootstrap-select实现-->
+										<div class="control-group">
+
+													<label class="control-label">输入要安装的包名</label>
+													<input type="text" id="yum_salt_rpm" class="m-wrap span12" placeholder="http,sshd,git逗号隔开">
+													<div class="controls">
+
+													</div>
+
+												</div>
+							</div>
+						
+						<div class="tab-pane fade" id="deploy">
+							<p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 
+								TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+								
+								{% for dcen_li in dcen_list %}
+                                            <div class="col-sm-2">
+                                                <label class="checkbox-inline">
+                                                    <input class="icheck" type="checkbox" value="{{ dcen_li }}" name="datacenter">{{ dcen_li }}
+                                                </label>
+                                            </div>
+                                {% endfor %}
+						</div>
+						<div class="tab-pane fade" id="rollback">
+							<p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 
+								TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+								
+								{% for dcen_li in dcen_list %}
+                                            <div class="col-sm-2">
+                                                <label class="checkbox-inline">
+                                                    <input class="icheck" type="checkbox" value="{{ dcen_li }}" name="datacenter">{{ dcen_li }}
+                                                </label>
+                                            </div>
+                                {% endfor %}
+						</div>
+						
+						<div class="tab-pane fade" id="jmeter">
+							<p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+							{% for dcen_li in data_centers %}
+                                                <div class="col-sm-2">
+                                                    <label class="checkbox-inline">
+                                                        <input class="icheck" type="checkbox" value="{{ dcen_li }}" name="datacenter">{{ dcen_li }}
+                                                    </label>
+                                                </div>
+                                                {% endfor %}
+						</div>
+						
+						
+						<div class="tab-pane" id="ejb">
+							
+							<table class="table table-striped table-bordered table-hover" id="123">
+							<th>1</th>
+							<th>2</th>
+							<th>3</th>
+							{% for dcen_li in dcen_list %}
+							<tr>
+							<td>{{ dcen_li }}</td>
+							<td>{{ dcen_li }}</td>
+							<td>{{ dcen_li }}</td>
+							</tr>
+							{% endfor %}
+							</table>
+						</div>
+						
+						<div class="tab-pane fade" id="gao3">
+							<p>这是一个三级菜单</p>
+						</div>
+						
+						
+						<div class="tab-pane fade" id="orders">
+								<div class="control-group">
+
+													<label class="control-label">选择组</label>
+
+													<div class="controls">
+
+														<select class="small m-wrap" id="select_group" tabindex="1" onchange="select_group_Onchang(this)">
+														</select>
+
+													</div>
+
+												</div>
+												<!--<div class="control-group">
+
+													<label class="control-label">选择主机:</label>
+
+													<div class="controls">
+
+														<select class="medium m-wrap" id="select_host" onchange="select_host_Onchang(this)" tabindex="1">
+														
+														</select>
+
+													</div>
+
+												</div>-->
+												<!--新增的一块-->
+												<div class="control-group">
+										<div class="container">
+								        <!--<h1 class="page-header">多选框</h1>-->
+								        <div class="form-group">
+								            <div class="input-group">
+								                <div class="input-group-addon">选择组内IP</div>
+								                <!--保存多选框的id-->
+								                <input type="hidden" id="ids" />
+								                <input class="input-group" type="text" id="txt" onclick="show(this)" placeholder="选择组内IP" readonly style="width:350px">
+								                <div class="popover fade bottom in" id="panel" style="display:block;opacity:0">
+								                
+								                <button type="button" class="close" onclick="hide()">
+								                 </button>
+								                
+								                    <div class="arrow"></div>
+								                    <div  class="popover-title" style="height:35px;">
+								                        <div class="checkbox" style="margin-top:0;margin-bottom:0px;"></div><label id="label_check"><input type="checkbox" id="check_ip" onclick="CheckAll(this)" />全选</label>
+								                    </div>
+								                    <div class="popover-content" id="select_div">
+								                        <ul class="list-inline" id="ul" >
+								                            <!--<li><div class="checkbox"></div><label><input type="checkbox" value="0" onclick="Choose(this)"/>5M</label></li>-->
+								                        </ul>
+								                    </div>
+								                </div>
+								            </div>
+								        </div>
+								    </div>
+												
+												</div>
+												<!--新增的一块-->
+												<!--又增加一块-->
+												<!--又增加一块-->
+												
+												
+												<div class="control-group">
+
+													<label class="control-label">命令(只针对选中机器)</label>
+													<input type="text" id="salt_order" class="m-wrap span12" placeholder="cp.get_dir">
+													<div class="controls">
+
+													</div>
+
+												</div>
+												<div class="control-group">
+
+													<label class="control-label">针对linux机器参数</label>
+
+													<div class="controls">
+													<input type="text" id="salt_args_linux" placeholder="仅限linux机器使用,参数用,或空格分开。salt://src,/root/dest" class="m-wrap span12">
+													</div>
+
+												</div>
+												
+												<div class="control-group">
+
+													<label class="control-label">针对windows机器参数</label>
+
+													<div class="controls">
+													<input type="text" id="salt_args_win" placeholder="仅限windows机器使用,参数用,或空格分开。salt://temp,d:/1012/" class="m-wrap span12">
+													</div>
+
+												</div>
+												
+												<div class="control-group">
+
+													<label class="control-label">常见命令(针对所有机器)</label>
+
+													<div class="controls">
+
+														<select class="large m-wrap" id="common_cmd" tabindex="1">
+															<option value="Category 1">manage.status</option>
+															<option value="Category 1">test.ping</option>
+															<option value="Category 1">salt-key -L</option>
+															<option value="Category 1">ss</option>
+															<option value="Category 1">ss</option>
+														</select>
+
+													</div>
+
+												</div>
+
+												
+												
+											
+												<div class="control-group">
+
+												<label class="control-label">Input</label>
+
+												<div class="controls">
+
+												<input type="text" class="span6 m-wrap" />
+
+												<span class="help-inline">Some hint here</span>
+
+										</div>
+										
+
+									</div>
+									
+						</div><!-- 执行命令 -->
+						
+						
+						
+						
+						<div class="tab-pane fade" id="files"><!--添加文件上传功能-->
+						<div class="form-group">
+                		<label for="exampleInputFile">附件上传</label>
+                	 	<input  type="file" name="file" id="file_upload">
+            			</div>
+							</div><!--添加文件上传功能-->
+							
+							<div class="tab-pane fade" id="edit_config">
+							
+							<div class="control-group">
+
+													<label class="control-label">选择组</label>
+
+													<div class="controls">
+
+														<select class="small m-wrap" id="edit_config_group" tabindex="1" onchange="edit_group_Onchang(this)">
+														</select>
+
+													</div>
+
+												</div>
+										<!--多选下拉框bootstrap-select实现-->
+										<!--<select  multiple="multiple">  -->
+										<select id="edit_config_multiple" multiple="multiple">
+								    	</select>
+												
+										<!--多选下拉框bootstrap-select实现-->
+							
+							
+							
+								<label class="control-label">针对linux机器配置文件</label>
+											<div class="controls">
+											<input type="text" id="edit_config_linux" placeholder="/www/config/httpd.config" class="m-wrap span12">
+											</div>
+										<label class="control-label">针对windows机器配置文件</label>
+											<div class="controls">
+											<input type="text" id="edit_config_win" placeholder="d:/tomcat/confg/server.xml" class="m-wrap span12">
+											</div>
+											
+											<label class="control-label">内容修改:</label>
+											<div class="row-fluid">
+											<div class="span10">
+												<div class="controls">
+													<textarea class="form-control" style="min-width: 100%" rows="5" placeholder="配置有空格则加上单引号，如果需要追加则此处填'追加'" id="edit_config_pre"></textarea>
+												</div>
+											</div>
+											</div>
+											<div class="row-fluid">
+											<div class="span10">
+												<div class="controls">
+													<textarea class="form-control" style="min-width: 100%" rows="5" placeholder="配置有空格则加上单引号,此处不可为空"  id="edit_config_last"></textarea>
+												</div>
+											</div>
+											</div>
+						</div>
+							
+						</div>  
+												<div  id='bottom_button'>
+
+													<!--<button type="submit" class="btn blue" onclick="saltFunc()"><i class="icon-ok"></i> 提交</button>-->
+													
+													<button type="button" class="btn" id="show_view" style="display:none" >预览</button>
+													
+													<a class="btn btn-primary" onclick="saltFunc()" >提交</a>
+
+													<button type="button" class="btn">取消</button>
+
+												</div>
+											</form>
+									</div>
+									
+							</div>
+						</div>
+						</div>
+						
+						
+						
+						
+						<!--右边显示的-->
+					<div class="span6">
+
+						<!-- BEGIN SAMPLE FORM PORTLET-->   
+
+						<div class="portlet box yellow">
+
+							<div class="portlet-title">
+
+								<div class="caption">
+
+									<i class="icon-reorder"></i>
+
+									<span class="hidden-480">执行结果</span>
+
+								</div>
+
+							</div>
+
+							<div id="result_html" class="portlet-body form">
+
+									<!--执行结果栏-->
+									<label id="scuess_num" class="label label-success" ></label>
+									<div id="scuess_exec" class="control-group" style="display: none">
+									
+									</div>
+									
+									
+									
+									<div>
+									<label id="failed_num" class="label label-error" ></label>
+									<div>
+									<div id="failed_exec" class="control-group" style="display: none">
+									</div>
+									
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+<!--又一个-->
+
+
+
+
+
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+	<!-- BEGIN CORE PLUGINS -->
+
+	<script src="/static/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+	<script src="/static/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<script src="/static/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+	<script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+	
+	
+
+	<!--[if lt IE 9]>
+
+	<script src="/static/js/excanvas.min.js"></script>
+
+	<script src="/static/js/respond.min.js"></script>  
+
+	<![endif]-->   
+
+	<script src="/static/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+	<script src="/static/js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+	<script src="/static/js/jquery.cookie.min.js" type="text/javascript"></script>
+
+	<script src="/static/js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+	<!-- END CORE PLUGINS -->
+
+	<script src="/static/js/app.js"></script>     
+	<!--调用自定义的js方法-->
+	<script src="/static/js/salt_api/exec_cmd.js" type="text/javascript"></script>
+	
+	
+	<!--引用SweetAlert的js-->
+	<script src="/static/js/sweetalert/sweetalert.min.js"></script> 
+	<script src="/static/js/sweetalert/sweetalert-dev.js"></script> 
+	<script src="/static/js/sweetalert/sweetalert-dev.min.js"></script> 
+		
+	<script>
+
+		jQuery(document).ready(function() {   
+		   App.init();
+		});
+
+	</script>
+	<!--多选插件-->
+	<script src="/static/js/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+	<script src="/static/js/multiple-select-master/multiple-select.js"></script>
+
+	<!-- END JAVASCRIPTS -->   
+
+</body>
+
+<!-- END BODY -->
+
+</html>

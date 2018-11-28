@@ -1,0 +1,36 @@
+/*自定义宽度未用到，使用bootstrap3就是正常的*/
+    .myOwnDdl{
+        display:inline-block;
+        width:100%;
+    }
+
+    /* 实现宽度自定义 */
+    .myOwnDdl .btn-group{
+        width:100%;
+    }
+    .myOwnDdl .multiselect {
+        width:100%;
+        text-align:right;
+        margin-top:-5px;
+    }
+    .myOwnDdl ul {
+        width:100%;
+    }
+    .myOwnDdl .multiselect-selected-text {
+        position:absolute;
+        left:0;
+        right:25px;
+        text-align:left;
+        padding-left:20px;
+    }
+
+    /*控制隔行换色*/
+    .myOwnDll .multiselect-container li.odd {
+        background: #eeeeee;
+    }
+    /*//控制select文本内容位置*/
+    .btn-group>.btn:first-child {
+        margin-left: 0;
+        padding-right: 90%;
+    }
+    /* select -mul end */
