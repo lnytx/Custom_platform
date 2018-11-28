@@ -16,7 +16,7 @@ pip install paramiko \
 pip install apscheduler==2.1.2 \
 pip install pymysql 
 
-主要功能有: 
+主要功能有: \
 git版本集群发布管理 \
 salt命令批量执行 \
 一键yum源 \
@@ -24,6 +24,7 @@ salt命令批量执行 \
 saltminion_key管理 \
 系统日志记录 \
 zabbix api接入 \
+服务管理 \
 系统权限管理使用的django自身权限管理
 
 [先放数据库sql](https://github.com/lnytx/Custom_platform/blob/master/db/my_devpos.sql) \
