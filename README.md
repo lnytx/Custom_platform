@@ -33,7 +33,7 @@ zabbix api接入 \
 ![ABC](https://github.com/lnytx/Custom_platform/blob/master/temp/%E4%B8%BB%E6%9C%BA%E7%AE%A1%E7%90%86.png) 
 
 
-
+预览：\
 ![ABC](https://github.com/lnytx/Custom_platform/blob/master/project_images/cmdb1.png)
 
 git项目管理，初始化git项目，之后就可以直接实现业务自动化代码提交回滚（上家公司的管理方式）
