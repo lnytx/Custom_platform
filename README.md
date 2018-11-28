@@ -14,17 +14,16 @@ pip install django \
 pip install configparser \
 pip install paramiko \
 pip install apscheduler==2.1.2 \
-pip install pymysql \
+pip install pymysql 
 
-下图项目实况：
 主要功能有: 
-git版本集群发布管理
-salt命令批量执行
-一键yum源
-简单cmdb管理
-saltminion_key管理
-系统日志记录
-zabbix api接入
+git版本集群发布管理 \
+salt命令批量执行 \
+一键yum源 \
+简单cmdb管理 \
+saltminion_key管理 \
+系统日志记录 \
+zabbix api接入 \
 系统权限管理使用的django自身权限管理
 
 [先放数据库sql](https://github.com/lnytx/Custom_platform/blob/master/db/my_devpos.sql) \
