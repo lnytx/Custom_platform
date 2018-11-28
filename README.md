@@ -6,15 +6,15 @@
 
 我的邮箱:ln111999@163.com
 
-yum install -y salt-master
-yum install -y salt-api
-yum install -y expect(git@host的交互，各个子节点都要装，本地yum源中有，可以直接安装)
+yum install -y salt-master \
+yum install -y salt-api \
+yum install -y expect(git@host的交互，各个子节点都要装，本地yum源中有，可以直接安装) \
 
-pip install django
+pip install django \
 pip install configparser \
 pip install paramiko \
-pip install apscheduler==2.1.2
-pip install pymysql
+pip install apscheduler==2.1.2 \
+pip install pymysql \
 
 下图项目实况：
 主要功能有: 
