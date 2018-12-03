@@ -53,6 +53,13 @@ git项目管理，初始化git项目，之后就可以直接实现业务自动�
 
 ![salt-cmd1](https://github.com/lnytx/Custom_platform/blob/master/temp/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C.png)
 
+在linux与windows下执行命令 \
+![salt-cmd2](https://github.com/lnytx/Custom_platform/blob/master/project_images/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C.png)
+![salt-cmd3](https://github.com/lnytx/Custom_platform/blob/master/project_images/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C.png)
+从master复制目录到集群 \
+![salt-cmd4](https://github.com/lnytx/Custom_platform/blob/master/project_images/%E5%A4%8D%E5%88%B6%E7%9B%AE%E5%BD%95%E5%88%B0minion.png)
+![salt-cmd5](https://github.com/lnytx/Custom_platform/blob/master/project_images/%E5%A4%8D%E5%88%B6%E7%9B%AE%E5%BD%95%E5%88%B0minion2.png)
+![salt-cmd6](https://github.com/lnytx/Custom_platform/blob/master/project_images/%E5%A4%8D%E5%88%B6%E7%9B%AE%E5%BD%95%E5%88%B0minion3.png)
 
 ![ABC](https://github.com/lnytx/Custom_platform/blob/master/project_images/salt_file_modify.png)
 
