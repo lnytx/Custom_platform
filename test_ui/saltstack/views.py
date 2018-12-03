@@ -167,7 +167,7 @@ def exec_cmd(request):
                     print("执行结果",result)
      #根据error_list找出结果result的key值出现在error_list里的dict,标记为result_failed
      #定义错误列表，根据关键字确定是否执行成功
-                error_list=['False','error','No minions matched','No command was sent',
+                error_list=['False','error','No minions matched','No command was sent','incorrect','[]',
                             'no jid was assigned','issue any command','is not recognized',
                             'Usage:','ERROR: Specified cwd','is not available','salt: error:','Minion did not return',
                             'Passed invalid arguments','caused an exception','contains no section headers','Connection refused','Error: Package:','Error'
@@ -219,7 +219,6 @@ def exec_cmd(request):
                 if result:
                     msg={"code":0,"msg":str(order)+"命令执行成功"}
                     result=dict(msg,**dict(result_scuess,**result_failed))
-                    print("错误的result",result)
                     return HttpResponse(json.dumps(result), content_type='application/json')
                 else:
                     return HttpResponse(json.dumps({"code":-1,"msg":"result为空，执行失败，请看日志"}), content_type='application/json')

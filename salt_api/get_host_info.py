@@ -50,7 +50,7 @@ def get_salt_host_details(tgt):
     return host_info,disk_usage,connect
     
 if __name__=='__main__':
-    result = get_salt_host_details('windows10_app1')
+    result = get_salt_host_details('192.168.168.129_web1')
     print(type(result),len(result),result)
     #{'/boot': {'1K-blocks': '297485', 'capacity': '14%', 'used': '36690', 'filesystem': '/dev/sda1', 'available': '245435'}, '/': {'1K-blocks': '47269816', 'capacity': '45%', 'used': '19979660', 'filesystem': '/dev/sda3', 'available': '24888928'}, '/dev/shm': {'1K-blocks': '953452', 'capacity': '1%', 'used': '124', 'filesystem': 'tmpfs', 'available': '953328'}}
     #disk_usage {'D:\\': {'filesystem': 'D:\\', '1K-blocks': 1953512444, 'used': 398024044, 'capacity': '20%', 'available': 1555488400}, 'E:\\': {'filesystem': 'E:\\', '1K-blocks': 823159804, 'used': 805258976, 'capacity': '98%', 'available': 17900828}, 'C:\\': {'filesystem': 'C:\\', '1K-blocks': 152604152, 'used': 72042612, 'capacity': '47%', 'available': 80561540}}
