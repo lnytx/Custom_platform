@@ -4,7 +4,6 @@ Created on 2017年8月16日
 @author: ning.lin
 '''
 
-
 import json
 
 import salt.client as sc
